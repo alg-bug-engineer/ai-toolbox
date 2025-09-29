@@ -6,6 +6,8 @@ import LoginPage from '../pages/Login';
 import RegisterPage from '../pages/Register';
 import WelcomePage from '../pages/Welcome';
 import AIGeneratorPage from '../pages/Tools/AIGenerator';
+// 1. 导入新页面组件
+import SculptureGeneratorPage from '../pages/Tools/SculptureGenerator';
 import MainLayout from '../components/layout/MainLayout';
 
 // 路由守卫组件
@@ -37,6 +39,8 @@ const AppRouter = () => {
             { path: 'ai-meme', element: <AIGeneratorPage /> },
             // 未来可以添加其他工具页面
             // { path: '3d-sculpture', element: <ThreeDSculpturePage /> },
+            // 2. 添加新功能的路由
+            { path: '3d-sculpture', element: <SculptureGeneratorPage /> },
           ],
         },
       ],

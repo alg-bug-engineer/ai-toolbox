@@ -15,9 +15,10 @@ export interface UserInfo {
 // 图片历史记录项
 export interface ImageHistoryItem {
   id: string;
-  prompt: string;
   imageUrl: string;
   createdAt: string;
+  prompt?: string; // 对于 AI 梗图
+  originalFileName?: string; // 对于立体雕塑
 }
 
 // 分页数据结构
